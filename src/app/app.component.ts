@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'admin-lte';
+  title = 'admin-lte-angular';
+  sideBarOpened: boolean = false;
+
+
+
+  toggleSideBar() {
+    this.sideBarOpened = !this.sideBarOpened;
+  }
+
 }
